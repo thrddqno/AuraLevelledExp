@@ -1,0 +1,4 @@
+name: AuraLevelledExp
+version: '${project.version}'
+main: dev.therd.auralevelledexp.AuraLevelledExp
+api-version: '1.20'
