@@ -25,7 +25,8 @@ $$
 \text{XP} = \text{Source XP} \times \left(1 + \frac{\text{Mob Level}}{100}\right)^{\text{Growth Rate}}
 $$
 
-### Credits
+## Credits
 [ArchyX](https://github.com/Archy-X)
 - [AuraMobs](https://github.com/Archy-X/AuraMobs/tree/5f3a20379984265d7a7fbc7b1ac1715d76a2e34d)
+
 [megaphag](https://www.spigotmc.org/members/megaphag.933033/) (ConfigManager)
