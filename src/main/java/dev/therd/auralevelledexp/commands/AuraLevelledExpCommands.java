@@ -16,13 +16,6 @@ public class AuraLevelledExpCommands {
                             sender.sendMessage("Configuration reloaded.");
                         })
                 )
-                .withSubcommand(new CommandAPICommand("get")
-                        .withSubcommand(new CommandAPICommand("levelled_skills_gain")
-                                .executes((sender, args) -> {
-                                    sender.sendMessage(String.valueOf(ConfigManager.getInstance().getBoolean(ConfigManager.getInstance().getConfig("config.yml"), "levelled_skills_gain.enabled")));
-                                })
-                        )
-                )
                 .register();
     }
 }

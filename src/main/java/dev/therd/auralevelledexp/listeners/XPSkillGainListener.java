@@ -34,9 +34,9 @@ public class XPSkillGainListener implements Listener {
         final LevelInterface levelInterface = LevelledMobs.getInstance().getLevelInterface();
 
         LivingEntity entity = event.getAttacked();
-        getLogger().info(String.valueOf(ConfigManager.getInstance().getBoolean(ConfigManager.getInstance().getConfig("config.yml"), "levelled_skills_gain.enabled")));
+        //getLogger().info(String.valueOf(ConfigManager.getInstance().getBoolean(ConfigManager.getInstance().getConfig("config.yml"), "levelled_skills_gain.enabled")));
         if(!ConfigManager.getInstance().getBoolean(ConfigManager.getInstance().getConfig("config.yml"), "levelled_skills_gain.enabled")) return;
-        getLogger().info(String.valueOf(levelInterface.getLevellableState(entity) != LevellableState.ALLOWED));
+        //getLogger().info(String.valueOf(levelInterface.getLevellableState(entity) != LevellableState.ALLOWED));
         if(levelInterface.getLevellableState(entity) != LevellableState.ALLOWED) return;
 
         Player player = event.getPlayer();
@@ -49,7 +49,7 @@ public class XPSkillGainListener implements Listener {
         String XpGainFormula = "$1 + (1 + $2/100)^$3"; //sourcexp * (1 + mob_lvl/100)^growth_rate
         CompiledExpression exp = Crunch.compileExpression(XpGainFormula);
         double modifiedXp = exp.evaluate(sourceXp, growth_rate , mob_level);
-        getLogger().info(String.valueOf(modifiedXp));
+        //getLogger().info(String.valueOf(modifiedXp));
         event.setAmount(modifiedXp);
     }
 }
