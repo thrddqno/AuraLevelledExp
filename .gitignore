@@ -1,0 +1,13 @@
+#Idea
+.idea/
+
+#outs
+target/
+*.class
+
+#modules
+*.iml
+*.ipr
+*.iws
+
+*.jar
