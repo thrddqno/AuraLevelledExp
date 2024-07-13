@@ -6,7 +6,7 @@
 
   <groupId>dev.therd</groupId>
   <artifactId>AuraLevelledExp</artifactId>
-  <version>0.2-dev</version>
+  <version>0.2-rel</version>
   <packaging>jar</packaging>
 
   <name>AuraLevelledExp</name>
@@ -116,6 +116,7 @@
           <groupId>io.github.arcaneplugins</groupId>
           <artifactId>LevelledMobs-plugin</artifactId>
           <version>4.0.3.1</version>
+          <scope>provided</scope>
       </dependency>
       <dependency>
           <groupId>me.clip</groupId>
