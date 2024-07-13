@@ -1,0 +1,7 @@
+#
+#
+
+
+levelled_skills_gain:
+  enabled: true
+  growth_rate: 0.5 #determines how rapidly the experience points should increase with each level.

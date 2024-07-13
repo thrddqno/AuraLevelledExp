@@ -23,8 +23,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
+          <source>9</source>
+          <target>9</target>
         </configuration>
       </plugin>
       <plugin>
@@ -53,6 +53,7 @@
                           <artifact>io.github.arcaneplugins:LevelledMobs-plugin</artifact>
                           <excludes>
                               <exclude>*.yml</exclude>
+                              <exclude>kotlin/**</exclude>
                           </excludes>
                       </filter>
                       <filter>
@@ -92,6 +93,10 @@
           <id>redempt.dev</id>
           <url>https://redempt.dev</url>
       </repository>
+      <repository>
+          <id>placeholderapi</id>
+          <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -111,6 +116,17 @@
           <groupId>io.github.arcaneplugins</groupId>
           <artifactId>LevelledMobs-plugin</artifactId>
           <version>4.0.3.1</version>
+      </dependency>
+      <dependency>
+          <groupId>me.clip</groupId>
+          <artifactId>placeholderapi</artifactId>
+          <version>2.11.6</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>nomaven</groupId>
+          <artifactId>CommandAPI</artifactId>
+          <version>9.6.0</version>
       </dependency>
   </dependencies>
 </project>
