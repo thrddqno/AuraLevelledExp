@@ -1,5 +1,5 @@
 
-# AuraLevelledSkills
+# AuraLevelledExp
 
 [![Release](https://img.shields.io/badge/release-0.2-blue?logo=github)](https://github.com/thrddqno/AuraLevelledExp/releases/tag/latest)
 
