@@ -11,3 +11,5 @@ target/
 *.iws
 
 *.jar
+
+dependency-reduced-pom.xml
