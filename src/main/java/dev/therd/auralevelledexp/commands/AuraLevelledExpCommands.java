@@ -3,8 +3,6 @@ package dev.therd.auralevelledexp.commands;
 import dev.jorel.commandapi.CommandAPICommand;
 import dev.jorel.commandapi.CommandPermission;
 import dev.therd.auralevelledexp.config.ConfigManager;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.checkerframework.checker.units.qual.C;
 
 public class AuraLevelledExpCommands {
     public static void registerCommands(){
